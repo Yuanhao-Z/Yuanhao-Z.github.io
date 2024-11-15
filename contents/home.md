@@ -5,7 +5,7 @@
 He is currently pursuing a Master's Degree in Electronic Information Technology, at Xidian University, China.
 
 #### Email
-yhaozyh[at]163.com
+yhaozyh@163.com
 
 #### Education
 M.E., Electronic Information Technology, Xidian University, 2024—2027 (expected).\
@@ -13,4 +13,3 @@ B.E., Electronic Science and Technology, Chongqing University of Posts and Telec
 
 #### Research Interests
 Embedded System, Edge AI, Model Lightweight, Fault Detection.
-
