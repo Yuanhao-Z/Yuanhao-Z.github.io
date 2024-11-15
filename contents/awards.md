@@ -1,9 +1,11 @@
-- First-prize Academic Scholarship, 2023.
+- Freshman Academic Scholarship, 2024.
 
-- Freshman Academic Scholarship, 2022.
+- Third-prize Academic Scholarship, 2023.
 
-- Excellent Graduation Project of Jiangsu Province, 2022.
+- The 13th "Challenge Cup" Chinese College students Entrepreneurship Plan Competition, 2022
 
-- First-prize Enterprise Scholarship, 2021.
+- Spiritual Civilization Building Advanced Individuals of CQUPT, 2022.
 
-- First-prize Academic Scholarship, 2019.
+- National Encouragment Scholarship, 2021.
+
+- Second-prize Academic Scholarship, 2021.
