@@ -2,7 +2,7 @@
 
 - Third-prize Academic Scholarship, 2023.
 
-- The 13th "Challenge Cup" Chinese College students Entrepreneurship Plan Competition, 2022
+- The 13th "Challenge Cup" Chinese College students Entrepreneurship Plan Competition, 2022.
 
 - Spiritual Civilization Building Advanced Individuals of CQUPT, 2022.
 
