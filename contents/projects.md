@@ -2,7 +2,7 @@
 
 - Image Acquisition of Underwater Robot and Real-time Transmission of Video Stream in LAN, Xidian University, 2024.
 
-- Design of a Dynamic Comparator with Transconductance Enhanced Latch Stage, CQUPT, 2024
+- Design of a Dynamic Comparator with Transconductance Enhanced Latch Stage, CQUPT, 2024.
 
 - Design of Multifunction Filter, CQUPT, 2023.
 
