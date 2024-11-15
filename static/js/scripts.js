@@ -1,9 +1,6 @@
-
-
 const content_dir = 'contents/'
 const config_file = 'config.yml'
 const section_names = ['home', 'projects', 'awards', "publications"]
-
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -29,7 +26,6 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-
     // Yaml
     fetch(content_dir + config_file)
         .then(response => response.text())
@@ -41,25 +37,53 @@ window.addEventListener('DOMContentLoaded', event => {
                 } catch {
                     console.log("Unknown id and value: " + key + "," + yml[key].toString())
                 }
-
             })
         })
         .catch(error => console.log(error));
 
-
     // Marked
     marked.use({ mangle: false, headerIds: false })
+
     section_names.forEach((name, idx) => {
-        fetch(content_dir + name + '.md')
-            .then(response => response.text())
-            .then(markdown => {
-                const html = marked.parse(markdown);
-                document.getElementById(name + '-md').innerHTML = html;
-            }).then(() => {
-                // MathJax
-                MathJax.typeset();
-            })
-            .catch(error => console.log(error));
+        if (name === 'projects') {
+            // 项目数据
+            const projectsData = [
+                "Intelligent Circuit Breaker Data Acquisition and IoT Cloud Platform Real-Time Data Reception and Delivery, Xidian University, 2024.",
+                "Image Acquisition of Underwater Robot and Real-time Transmission of Video Stream in LAN, Xidian University, 2024.",
+                "Design of a Dynamic Comparator with Transconductance Enhanced Latch Stage, CQUPT, 2024.",
+                "Design of Multifunction Filter, CQUPT, 2023.",
+                "Battery Gauge based on Artificial Intelligence RUL Prediction Algorithm, CQUPT, 2022-2023.",
+                "Design, Installation and Commissioning of Wireless Frequency Modulation Transmitter, CQUPT, 2022."
+            ];
+
+            // 获取 projects-md 元素
+            const projectsMdElement = document.getElementById('projects-md');
+
+            // 将项目数据转换为 HTML 内容
+            const projectsHtml = projectsData.map((project, index) => {
+                return `<div class="project-item">${project}</div>`;
+            }).join('');
+
+            // 将 HTML 内容插入到 projects-md 元素中
+            projectsMdElement.innerHTML = projectsHtml;
+
+            // 可选：添加一些样式
+            const projectItems = document.querySelectorAll('.project-item');
+            projectItems.forEach(item => {
+                item.style.marginBottom = '1rem'; // 添加底部边距
+            });
+        } else {
+            fetch(content_dir + name + '.md')
+                .then(response => response.text())
+                .then(markdown => {
+                    const html = marked.parse(markdown);
+                    document.getElementById(name + '-md').innerHTML = html;
+                }).then(() => {
+                    // MathJax
+                    MathJax.typeset();
+                })
+                .catch(error => console.log(error));
+        }
     })
 
-}); 
+});
